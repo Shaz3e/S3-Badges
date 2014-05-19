@@ -1,0 +1,136 @@
+.shaz3e{
+    color:white;
+    text-align:center;
+    border-bottom:solid 1px black;
+}
+.shaz3e img{
+    width:30px;
+    height:auto;
+}
+.shaz3e h2{margin:0;padding:0 0 0.3em 0;}
+.s3-menu{
+    margin:1em 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.s3-menu ul{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.s3-menu ul li{
+    display:block;
+    border-bottom:solid 1px #222;
+}
+.s3-menu ul li:last-child{border:none;}
+.s3-menu ul li a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    padding:0.5em 0;
+}
+.s3-menu ul li a:hover{padding-left:1em;color:#666;}
+.s3{font-family: 'Open Sans Condensed', sans-serif;color:white;}
+.s3 p{}
+.s3 p a{background:#121212;padding:0.2em 0.5em;text-decoration:none;color:white;}
+/*Content Area*/
+.s3-content-area{
+    position:relative;
+}
+.s3-content img{
+	width:100%;
+	height:auto;
+}
+.s3-content-area h2{
+    border-bottom:solid 1px #ddd;
+    padding:0 0 0.3em 0;
+}
+.s3-content-area h2 small{
+    color:#ddd;
+}
+.s3-content-area p a{color:#1a1a1a;}
+.s3-top{
+    position:absolute;
+    top:8px;
+    right:0;
+}
+.s3-top a{
+    text-decoration:none;
+    color:#1a1a1a;
+    background:#ddd;
+    padding:0.5em 1em;
+}
+.s3-top a:hover{background:#1a1a1a;color:#fafafa;}
+
+.s3-boxes{
+    width:100%;
+    background:#fff;
+}
+.s3-boxes h3{
+    color:white;
+    background:#1a1a1a;
+    padding:0.3em 0.5em;
+}
+.s3-boxes h3 small{color:red;}
+
+
+@media (min-width: 980px){
+    .s3-sidebar{
+        position:fixed;
+        top:0;
+        left:0;
+        padding:0 2%;
+        width:16%;
+        background:#1a1a1a;
+        height:100vh;
+    }
+    .s3-content{
+        float:left;
+        margin-left:20%;
+        padding:0 5%;
+        width:70%;
+        background:#fafafa;
+    }
+    .s3-box{
+        float:left;
+        margin:2.5%;
+        width:19.7%;
+        text-align:center;
+    }
+    .s3-box-block{
+        float:left;
+        margin:2.5%;
+        width:19.7%;
+        height:200px;
+        border:solid 1px #f0f0f0;
+        position:relative;
+    }
+}
+@media (max-width: 979px){
+    .s3-sidebar{
+        float:left;
+        padding:2%;
+        width:96%;
+        text-align:center;
+        background:#1a1a1a;
+    }
+    .s3-content{
+        float:left;
+        padding:0 5%;
+        width:90%;
+        background:#fafafa;
+    }
+    .s3-box{
+        float:left;
+        margin:2.5%;
+        width:95%;
+        text-align:center;
+    }
+    .s3-box-block{
+        float:left;
+        margin:2.5%;
+        width:95%;
+        height:200px;
+        border:solid 1px #f0f0f0;
+        position:relative;
+    }
+}

@@ -1,0 +1,294 @@
+.block {
+    border: 1px solid #F0F0F0;
+    height: 250px;
+    margin: 1em;
+    position: relative;
+    width: 250px;
+    float:left;
+}
+/* S3 Badge Styles
+*********************************************/
+.s3-badge-left,.s3-badge-right,
+.s3-badge-left-small,.s3-badge-right-small,
+.s3-badge-left-big,.s3-badge-right-big{position:absolute;overflow:hidden;top:0;}
+
+/* S3 Badge Sizes for Left & Right
+*********************************************/
+.s3-badge-left,.s3-badge-right{width:100px;height:100px;}
+.s3-badge-left-small,.s3-badge-right-small{width:75px;height:75px;}
+.s3-badge-left-big,.s3-badge-right-big{width:200px;height:200px;}
+
+/* S3 Badge Positions Left & Right
+*********************************************/
+.s3-badge-left,.s3-badge-left-small,.s3-badge-left-big{left:0;}
+.s3-badge-right,.s3-badge-right-small,.s3-badge-right-big{right:0;}
+
+/* S3 Badge Styles for default (Colors)
+*********************************************/
+.s3-badge-left .s3-badge-red,.s3-badge-right .s3-badge-red,
+.s3-badge-left .s3-badge-green,.s3-badge-right .s3-badge-green,
+.s3-badge-left .s3-badge-blue,.s3-badge-right .s3-badge-blue,
+.s3-badge-left .s3-badge-yellow,.s3-badge-right .s3-badge-yellow,
+.s3-badge-left .s3-badge-pink,.s3-badge-right .s3-badge-pink,
+.s3-badge-left .s3-badge-purple,.s3-badge-right .s3-badge-purple,
+.s3-badge-left .s3-badge-light-green,.s3-badge-right .s3-badge-light-green,
+.s3-badge-left .s3-badge-white,.s3-badge-right .s3-badge-white,
+.s3-badge-left .s3-badge-gray,.s3-badge-right .s3-badge-gray,
+.s3-badge-left .s3-badge-black,.s3-badge-right .s3-badge-black{
+	position: relative;
+	z-index: 100;
+	padding: 0.5em;
+	text-align: center;
+	width:150px;
+}
+
+/* S3 Badge Styles for small (Colors)
+*********************************************/
+.s3-badge-left-small .s3-badge-red,.s3-badge-right-small .s3-badge-red,
+.s3-badge-left-small .s3-badge-green,.s3-badge-right-small .s3-badge-green,
+.s3-badge-left-small .s3-badge-blue,.s3-badge-right-small .s3-badge-blue,
+.s3-badge-left-small .s3-badge-yellow,.s3-badge-right-small .s3-badge-yellow,
+.s3-badge-left-small .s3-badge-pink,.s3-badge-right-small .s3-badge-pink,
+.s3-badge-left-small .s3-badge-purple,.s3-badge-right-small .s3-badge-purple,
+.s3-badge-left-small .s3-badge-light-green,.s3-badge-right-small .s3-badge-light-green,
+.s3-badge-left-small .s3-badge-white,.s3-badge-right-small .s3-badge-white,
+.s3-badge-left-small .s3-badge-gray,.s3-badge-right-small .s3-badge-gray,
+.s3-badge-left-small .s3-badge-black,.s3-badge-right-small .s3-badge-black{
+	position: relative;
+	z-index: 100;
+	padding: 0.5em;
+	text-align: center;
+	width:100px;
+	font-size:0.8em;
+}
+
+/* S3 Badge Styles for big (Colors)
+*********************************************/
+.s3-badge-left-big .s3-badge-red,.s3-badge-right-big .s3-badge-red,
+.s3-badge-left-big .s3-badge-green,.s3-badge-right-big .s3-badge-green,
+.s3-badge-left-big .s3-badge-blue,.s3-badge-right-big .s3-badge-blue,
+.s3-badge-left-big .s3-badge-yellow,.s3-badge-right-big .s3-badge-yellow,
+.s3-badge-left-big .s3-badge-pink,.s3-badge-right-big .s3-badge-pink,
+.s3-badge-left-big .s3-badge-purple,.s3-badge-right-big .s3-badge-purple,
+.s3-badge-left-big .s3-badge-light-green,.s3-badge-right-big .s3-badge-light-green,
+.s3-badge-left-big .s3-badge-white,.s3-badge-right-big .s3-badge-white,
+.s3-badge-left-big .s3-badge-gray,.s3-badge-right-big .s3-badge-gray,
+.s3-badge-left-big .s3-badge-black,.s3-badge-right-big .s3-badge-black{
+	position: relative;
+	z-index: 100;
+    padding: 0.5em;
+    text-align: center;
+	width:200px;
+}
+
+/* S3 Badge Style margins (Colors)
+***********************************************************/
+.s3-badge-left .s3-badge-red,
+.s3-badge-left .s3-badge-green,
+.s3-badge-left .s3-badge-blue,
+.s3-badge-left .s3-badge-yellow,
+.s3-badge-left .s3-badge-pink,
+.s3-badge-left .s3-badge-purple,
+.s3-badge-left .s3-badge-light-green,
+.s3-badge-left .s3-badge-white,
+.s3-badge-left .s3-badge-gray,
+.s3-badge-left .s3-badge-black{top:12%;left:-50%;}
+.s3-badge-left-small .s3-badge-red,
+.s3-badge-left-small .s3-badge-green,
+.s3-badge-left-small .s3-badge-blue,
+.s3-badge-left-small .s3-badge-yellow,
+.s3-badge-left-small .s3-badge-pink,
+.s3-badge-left-small .s3-badge-purple,
+.s3-badge-left-small .s3-badge-light-green,
+.s3-badge-left-small .s3-badge-white,
+.s3-badge-left-small .s3-badge-gray,
+.s3-badge-left-small .s3-badge-black{top:16%;left:-40%;}
+.s3-badge-left-big .s3-badge-red,
+.s3-badge-left-big .s3-badge-green,
+.s3-badge-left-big .s3-badge-blue,
+.s3-badge-left-big .s3-badge-yellow,
+.s3-badge-left-big .s3-badge-pink,
+.s3-badge-left-big .s3-badge-purple,
+.s3-badge-left-big .s3-badge-light-green,
+.s3-badge-left-big .s3-badge-white,
+.s3-badge-left-big .s3-badge-gray,
+.s3-badge-left-big .s3-badge-black{top:22%;left:-22%;}
+
+.s3-badge-right .s3-badge-red,
+.s3-badge-right .s3-badge-green,
+.s3-badge-right .s3-badge-blue,
+.s3-badge-right .s3-badge-yellow,
+.s3-badge-right .s3-badge-pink,
+.s3-badge-right .s3-badge-purple,
+.s3-badge-right .s3-badge-light-green,
+.s3-badge-right .s3-badge-white,
+.s3-badge-right .s3-badge-gray,
+.s3-badge-right .s3-badge-black{top:12%;right:15%;}
+.s3-badge-right-small .s3-badge-red,
+.s3-badge-right-small .s3-badge-green,
+.s3-badge-right-small .s3-badge-blue,
+.s3-badge-right-small .s3-badge-yellow,
+.s3-badge-right-small .s3-badge-pink,
+.s3-badge-right-small .s3-badge-purple,
+.s3-badge-right-small .s3-badge-light-green,
+.s3-badge-right-small .s3-badge-white,
+.s3-badge-right-small .s3-badge-gray,
+.s3-badge-right-small .s3-badge-black{top:14%;right:10%;}
+.s3-badge-right-big .s3-badge-red,
+.s3-badge-right-big .s3-badge-green,
+.s3-badge-right-big .s3-badge-blue,
+.s3-badge-right-big .s3-badge-yellow,
+.s3-badge-right-big .s3-badge-pink,
+.s3-badge-right-big .s3-badge-purple,
+.s3-badge-right-big .s3-badge-light-green,
+.s3-badge-right-big .s3-badge-white,
+.s3-badge-right-big .s3-badge-gray,
+.s3-badge-right-big .s3-badge-black{top:22%;right:-14%;}
+/* S3 Badge Style for rotation (Colors)
+***********************************************************/
+.s3-badge-left .s3-badge-red,.s3-badge-left-small .s3-badge-red,.s3-badge-left-big .s3-badge-red,
+.s3-badge-left .s3-badge-green,.s3-badge-left-small .s3-badge-green,.s3-badge-left-big .s3-badge-green,
+.s3-badge-left .s3-badge-blue,.s3-badge-left-small .s3-badge-blue,.s3-badge-left-big .s3-badge-blue,
+.s3-badge-left .s3-badge-yellow,.s3-badge-left-small .s3-badge-yellow,.s3-badge-left-big .s3-badge-yellow,
+.s3-badge-left .s3-badge-pink,.s3-badge-left-small .s3-badge-pink,.s3-badge-left-big .s3-badge-pink,
+.s3-badge-left .s3-badge-purple,.s3-badge-left-small .s3-badge-purple,.s3-badge-left-big .s3-badge-purple,
+.s3-badge-left .s3-badge-light-green,.s3-badge-left-small .s3-badge-light-green,.s3-badge-left-big .s3-badge-light-green,
+.s3-badge-left .s3-badge-white,.s3-badge-left-small .s3-badge-white,.s3-badge-left-big .s3-badge-white,
+.s3-badge-left .s3-badge-gray,.s3-badge-left-small .s3-badge-gray,.s3-badge-left-big .s3-badge-gray,
+.s3-badge-left .s3-badge-black,.s3-badge-left-small .s3-badge-black,.s3-badge-left-big .s3-badge-black{
+	-webkit-transform: 	rotate(-45deg);
+	-moz-transform: 	rotate(-45deg);
+	-ms-transform: 		rotate(-45deg);
+	-o-transform: 		rotate(-45deg);
+	transform: 			rotate(-45deg);
+}
+
+.s3-badge-right .s3-badge-red,.s3-badge-right-small .s3-badge-red,.s3-badge-right-big .s3-badge-red,
+.s3-badge-right .s3-badge-green,.s3-badge-right-small .s3-badge-green,.s3-badge-right-big .s3-badge-green,
+.s3-badge-right .s3-badge-blue,.s3-badge-right-small .s3-badge-blue,.s3-badge-right-big .s3-badge-blue,
+.s3-badge-right .s3-badge-yellow,.s3-badge-right-small .s3-badge-yellow,.s3-badge-right-big .s3-badge-yellow,
+.s3-badge-right .s3-badge-pink,.s3-badge-right-small .s3-badge-pink,.s3-badge-right-big .s3-badge-pink,
+.s3-badge-right .s3-badge-purple,.s3-badge-right-small .s3-badge-purple,.s3-badge-right-big .s3-badge-purple,
+.s3-badge-right .s3-badge-light-green,.s3-badge-right-small .s3-badge-light-green,.s3-badge-right-big .s3-badge-light-green,
+.s3-badge-right .s3-badge-white,.s3-badge-right-small .s3-badge-white,.s3-badge-right-big .s3-badge-white,
+.s3-badge-right .s3-badge-gray,.s3-badge-right-small .s3-badge-gray,.s3-badge-right-big .s3-badge-gray,
+.s3-badge-right .s3-badge-black,.s3-badge-right-small .s3-badge-black,.s3-badge-right-big .s3-badge-black{
+	-webkit-transform: 	rotate(45deg);
+	-moz-transform: 	rotate(45deg);
+	-ms-transform: 		rotate(45deg);
+	-o-transform: 		rotate(45deg);
+	transform: 			rotate(45deg);
+}
+
+
+/* S3 Badge Styles for Colors
+*********************************************/
+/* red */
+.s3-badge-left .s3-badge-red,
+.s3-badge-left-small .s3-badge-red,
+.s3-badge-left-big .s3-badge-red,
+.s3-badge-right .s3-badge-red,
+.s3-badge-right-small .s3-badge-red,
+.s3-badge-right-big .s3-badge-red{
+    background: #f44242;
+    color: #ffffff;
+}
+
+/* green */
+.s3-badge-left .s3-badge-green,
+.s3-badge-left-small .s3-badge-green,
+.s3-badge-left-big .s3-badge-green,
+.s3-badge-right .s3-badge-green,
+.s3-badge-right-small .s3-badge-green,
+.s3-badge-right-big .s3-badge-green{
+    background: #008000;
+    color: #ffffff;
+}
+
+/* blue */
+.s3-badge-left .s3-badge-blue,
+.s3-badge-left-small .s3-badge-blue,
+.s3-badge-left-big .s3-badge-blue,
+.s3-badge-right .s3-badge-blue,
+.s3-badge-right-small .s3-badge-blue,
+.s3-badge-right-big .s3-badge-blue{
+    background: #5176d5;
+    color: #ffffff;
+}
+
+/* yellow */
+.s3-badge-left .s3-badge-yellow,
+.s3-badge-left-small .s3-badge-yellow,
+.s3-badge-left-big .s3-badge-yellow,
+.s3-badge-right .s3-badge-yellow,
+.s3-badge-right-small .s3-badge-yellow,
+.s3-badge-right-big .s3-badge-yellow{
+    background: #ffde01;
+    color: #000000;
+}
+
+/* pink */
+.s3-badge-left .s3-badge-pink,
+.s3-badge-left-small .s3-badge-pink,
+.s3-badge-left-big .s3-badge-pink,
+.s3-badge-right .s3-badge-pink,
+.s3-badge-right-small .s3-badge-pink,
+.s3-badge-right-big .s3-badge-pink{
+    background: #fb8f96;
+    color: #000000;
+}
+
+/* purple */
+.s3-badge-left .s3-badge-purple,
+.s3-badge-left-small .s3-badge-purple,
+.s3-badge-left-big .s3-badge-purple,
+.s3-badge-right .s3-badge-purple,
+.s3-badge-right-small .s3-badge-purple,
+.s3-badge-right-big .s3-badge-purple{
+    background: #e73ae9;
+    color: #ffffff;
+}
+
+/* light-green */
+.s3-badge-left .s3-badge-light-green,
+.s3-badge-left-small .s3-badge-light-green,
+.s3-badge-left-big .s3-badge-light-green,
+.s3-badge-right .s3-badge-light-green,
+.s3-badge-right-small .s3-badge-light-green,
+.s3-badge-right-big .s3-badge-light-green{
+    background: #aff918;
+    color: #ffffff;
+}
+
+/* white */
+.s3-badge-left .s3-badge-white,
+.s3-badge-left-small .s3-badge-white,
+.s3-badge-left-big .s3-badge-white,
+.s3-badge-right .s3-badge-white,
+.s3-badge-right-small .s3-badge-white,
+.s3-badge-right-big .s3-badge-white{
+    background: #f5f5f5;
+    color: #000000;
+}
+
+/* gray */
+.s3-badge-left .s3-badge-gray,
+.s3-badge-left-small .s3-badge-gray,
+.s3-badge-left-big .s3-badge-gray,
+.s3-badge-right .s3-badge-gray,
+.s3-badge-right-small .s3-badge-gray,
+.s3-badge-right-big .s3-badge-gray{
+    background: #708090;
+    color: #ffffff;
+}
+
+/* Black */
+.s3-badge-left .s3-badge-black,
+.s3-badge-left-small .s3-badge-black,
+.s3-badge-left-big .s3-badge-black,
+.s3-badge-right .s3-badge-black,
+.s3-badge-right-small .s3-badge-black,
+.s3-badge-right-big .s3-badge-black{
+    background: #4e4e4e;
+    color: #ffffff;
+}
