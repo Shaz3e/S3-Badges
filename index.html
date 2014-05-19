@@ -1,58 +1,699 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, intial-scale=1, maximum-scale=1, user-scaleable=no">
+<title>S3 Badges</title>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="S3-badges : " />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="s3-badges.css" rel="stylesheet" type="text/css">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
-    <title>S3-badges</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Shaz3e/S3-Badges">View on GitHub</a>
-
-          <h1 id="project_title">S3-badges</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Shaz3e/S3-Badges/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Shaz3e/S3-Badges/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="images/favicon/favicon.png">
+</head>
+<body>
+<div class="s3-sidebar">
+	<div class="shaz3e">
+		<img src="images/Shaz3e.png">
+		<h2>s3-badges.css</h2>
+	</div>
+    <div class="s3-menu">
+        <ul>
+            <li><a href="#about"><small><i class="fa fa-check-square"></i></small>&nbsp;&nbsp; About <span>S3 Badges</span></a></li>
+            <li><a href="#examples"><small><i class="fa fa-check-square"></i></small>&nbsp;&nbsp; Examples <span>Size & Color Options</span></a></li>
+            <li><a href="#usage"><small><i class="fa fa-check-square"></i></small>&nbsp;&nbsp; Usage <span>How to Implement</span></a></li>
+            <li><a href="#result"><small><i class="fa fa-check-square"></i></small>&nbsp;&nbsp; Result <span>The Final Demo</span></a></li>
+        </ul>
     </div>
+    <div class="s3">
+    	<p>Download <a href="s3-badges.css" target="_blank">s3-badges.css</a></p>
+        <p>s3-badges built by <a href="http://www.shaz3e.com" target="_blank">Shaz3e</a></p>
+        <h3>Share</h3>
+        <p>
+        	<a href="http://www.facebook.com/sharer.php?u=http://shaz3e.github.io/S3-Badges">Facebook</a> | 
+        	<a href="http://twitter.com/intent/tweet?url=http://shaz3e.github.io/S3-Badges&text=S3 Badges built with pure CSS which is easy to use in any project!&hashtags=s3,badges">Twitter</a>
+        </p>
+        <h3>Follow Shaz3e</h3>
+        <p>
+        	<a class="fa fa-facebook-square" href="https://www.facebook.com/Shaz3e" target="_blank"><span class="s3-hidden">Like Shaz3e on Facebook</span></a> 
+        	<a class="fa fa-twitter-square" href="https://www.twitter.com/Shaz3e" target="_blank"><span class="s3-hidden">Join Shaz3e on Twitter</span></a> 
+        	<a class="fa fa-pinterest-square" href="http://www.pinterest.com/shaz3e/" target="_blank"><span class="s3-hidden">Shaz3e's Pins on Pinterest</span></a> <a class="fa fa-youtube-square" href="http://www.youtube.com/user/shaz3e" target="_blank"><span class="s3-hidden">Watch Shaz3e on Youtube</span></a> 
+        	<a class="fa fa-tumblr-square" href="http://shaz3e.tumblr.com/" target="_blank"><span class="s3-hidden">Shaz3e's tumblr</span></a> 
+        	<a class="fa fa-vimeo-square" href="http://vimeo.com/shaz3e" target="_blank"><span class="s3-hidden">Shaz3e's Videos on Vimeo</span></a> 
+        	<a class="fa fa-instagram" href="http://instagram.com/shaz3e" target="_blank"><span class="s3-hidden">Classic Photos of Shaz3e on Instagram</span></a> 
+        	<a class="fa fa-linkedin-square" href="http://pk.linkedin.com/in/shaz3e/" target="_blank"><span class="s3-hidden">Shaz3e's Profile on Linkedin</span></a> 
+        	<a class="fa fa-behance-square" href="http://www.behance.net/Shaz3e" target="_blank"><span class="s3-hidden">Shaz3e's Portfolio on Behance</span></a> 
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="s3-badges" class="anchor" href="#s3-badges"><span class="octicon octicon-link"></span></a>S3-Badges</h1>
-
-<ul>
-<li>Documentation</li>
-<li>Demonstration</li>
-<li>Implementation
-<a href="http://shaz3e.github.io/S3-Badges">http://shaz3e.github.io/S3-Badges</a>
-</li>
-</ul>
-      </section>
+        	<a class="fa fa-github-square" href="https://github.com/Shaz3e/" target="_blank"><span class="s3-hidden">Join Shaz3e on Github</span></a>
+        	<a class="fa fa-git-square" href="https://gist.github.com/Shaz3e" target="_blank"><span class="s3-hidden">Shaz3e's Gists</span></a>
+        	<a class="fa fa-codepen" href="http://codepen.io/Shaz3e/" target="_blank"><span class="s3-hidden">Shaz3e on Codepen</span></a>
+        </p>
+        <p style="text-align:center;"><a href="http://www.shaz3e.com">www.Shaz3e.com <small><i class="fa fa-external-link-square"></i></small></a></p>
     </div>
+</div>
+<div id="top" class="s3-content">
+	<div class="s3-content-area">
+    	<div id="about">
+        	<h2>About <small>S3 Badges</small></h2>
+        	<img src="images/s3-badges.jpg">
+            <p>S3 Badges built with pure CSS which is easy to use in any project please read the complete documentation we have briefly define the usage of s3-badges.</p>
+            <h3>Key Features</h3>
+            <p>
+            <ul>
+            	<li>10 Colors</li>
+            	<li>2 Positions</li>
+            	<li>3 Sizes</li>
+            </ul>
+        	</p>
+            <p>Designed and built with all the love in the world by <a href="">@Shaz3e</a>.</p>
+        </div>
+	</div>
+	<div class="s3-content-area">
+    	<div id="examples">
+        	<div class="s3-top"><a href="#top">Back to Top</a></div>
+        	<h2>Examples <small>Size & Color Options</small></h2>
+            <div class="s3-boxes">
+            <div class="s3-clear"></div>
+            	<h3>S3 Badges <small>.s3-badge-left</small></h3>
+            	<div class="s3-box">
+                	
+                </div>
+            	<div class="s3-box">
+                	<h2>Small</h2>
+                    <p>.s3-badge-left-small</p>
+                </div>
+            	<div class="s3-box">
+                	<h2>Default</h2>
+                    <p>.s3-badge-left</p>
+                </div>
+            	<div class="s3-box">
+                	<h2>Big</h2>
+                    <p>.s3-badge-left-big</p>
+                </div>
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Red</h2>
+                    <p>.s3-badge-red</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Green</h2>
+                    <p>.s3-badge-green</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Blue</h2>
+                    <p>.s3-badge-blue</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Yellow</h2>
+                    <p>.s3-badge-yellow</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Pink</h2>
+                    <p>.s3-badge-pink</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Purple</h2>
+                    <p>.s3-badge-purple</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Light Green</h2>
+                    <p>.s3-badge-light-green</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>White</h2>
+                    <p>.s3-badge-white</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Gray</h2>
+                    <p>.s3-badge-gray</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Black</h2>
+                    <p>.s3-badge-black</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-small">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-left-big">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+            <div class="s3-clear"></div>
+            </div>
+            
+            <div class="s3-boxes">
+            <div class="s3-clear"></div>
+            	<h3>S3 Badges <small>.s3-badge-right</small></h3>
+            	<div class="s3-box">
+                	
+                </div>
+            	<div class="s3-box">
+                	<h2>Small</h2>
+                    <p>.s3-badge-right-small</p>
+                </div>
+            	<div class="s3-box">
+                	<h2>Default</h2>
+                    <p>.s3-badge-right</p>
+                </div>
+            	<div class="s3-box">
+                	<h2>Big</h2>
+                    <p>.s3-badge-right-big</p>
+                </div>
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Red</h2>
+                    <p>.s3-badge-red</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-red">Hot</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Green</h2>
+                    <p>.s3-badge-green</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-green">Free</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Blue</h2>
+                    <p>.s3-badge-blue</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-blue">New</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Yellow</h2>
+                    <p>.s3-badge-yellow</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-yellow">Sold</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Pink</h2>
+                    <p>.s3-badge-pink</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-pink">Latest</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Purple</h2>
+                    <p>.s3-badge-purple</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-purple">Special</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Light Green</h2>
+                    <p>.s3-badge-light-green</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-light-green">Cool</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>White</h2>
+                    <p>.s3-badge-white</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-white">Updated</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Gray</h2>
+                    <p>.s3-badge-gray</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-gray">Arrived</div>
+					</div>
+				</div>
+                
+            <div class="s3-clear"></div>
+				<div class="s3-box">
+                	<h2>Black</h2>
+                    <p>.s3-badge-black</p>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-small">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+				<div class="s3-box-block">
+					<div class="s3-badge-right-big">
+						<div class="s3-badge-black">Special</div>
+					</div>
+				</div>
+            <div class="s3-clear"></div>
+            </div>
+        </div>
+	</div>
+	<div class="s3-content-area">
+    	<div id="usage">
+        	<div class="s3-top"><a href="#top">Back to Top</a></div>
+       	  <h2>Usage <small>How to Implement</small></h2>
+          <p>To use S3-Badges is just simple as a piece of cake you just need to keep 3 things in mind. <strong>WHERE</strong>, <strong>HOW</strong> & <strong>WHICH</strong></p>
+          <p>In addition to including the s3-badges.css file in the head of your HTML file, you will need to create a parent div or element with <code>position: relative</code>. Within this element, you will place the badges HTML code, as shown below.</p>
+          <p>
+          	<ol>
+            	<li>Where would you to place your badge? i.e. Left or Right</li>
+                <li>How small or big you want your badge to be? i.e do not mention or small or big</li>
+                <li>Which color would you like to use? i.e. red, green or blue</li>
+            </ol>
+          </p>
+          <p>S3-Badge has simple logic as said only 3 things you need to keep in mind let's have a look on some examples</p>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">S3-badges maintained by <a href="https://github.com/Shaz3e">Shaz3e</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+        <p>
+        	<ol>
+            	<li>Where: left</li>
+                <li>How: small</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-left-small&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <p>
+        	<ol>
+            	<li>Where: left</li>
+                <li>How: default (do not mention)</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-left&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <p>
+        	<ol>
+            	<li>Where: left</li>
+                <li>How: big</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-left-big&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-    
+        <p>
+        	<ol>
+            	<li>Where: right</li>
+                <li>How: small</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-right-small&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <p>
+        	<ol>
+            	<li>Where: right</li>
+                <li>How: default (do not mention)</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-right&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <p>
+        	<ol>
+            	<li>Where: right</li>
+                <li>How: big</li>
+                <li>Which: red</li>
+            </ol>
+        </p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-right-big&quot;&gt;
+	&lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
-  </body>
+
+        </div>
+	</div>
+	<div class="s3-content-area">
+    	<div id="result">
+        	<div class="s3-top"><a href="#top">Back to Top</a></div>
+        	<h2>Result <small>The Final Demo</small></h2>
+<h2>CSS</h2>
+<p>Example div element with relative positioning and other styling:</p>
+<pre class="prettyprint lang-css">
+.yourClass{
+    position:relative;
+    float:left;
+    margin:2.5%;
+    width:19.7%;
+    height:200px;
+    border:solid 1px #f0f0f0;
+}
+</pre>
+<h2>HTML</h2>
+<p>Just the badge portion:</p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;s3-badge-left-big&quot;&gt;
+   &lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>Badge placed within a relative positioned div element:</p>
+<pre class="prettyprint lang-html">
+&lt;div class=&quot;yourClass&quot;&gt;
+    &lt;!-- start badge --&gt;
+    &lt;div class=&quot;s3-badge-left-big&quot;&gt;
+        &lt;div class=&quot;s3-badge-text-red&quot;&gt;Ribbon&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- end badge --&gt;
+    &lt;!-- your content goes here --&gt;
+&lt;/div&gt;
+</pre>
+        </div>
+	</div>
+</div>
+<footer>
+	<hr>
+</footer>
+</body>
 </html>

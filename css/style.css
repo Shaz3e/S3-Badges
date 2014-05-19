@@ -1,0 +1,22 @@
+@import url("template.css");
+*:link,*:visited{
+    transition:All 0.5s ease-in-out;
+    -webkit-transition:All 0.5s ease-in-out;
+    -moz-transition:All 0.5s ease-in-out;
+    -o-transition:All 0.5s ease-in-out;
+}
+*:hover{
+    transition:All 0.5s ease-in-out;
+    -webkit-transition:All 0.5s ease-in-out;
+    -moz-transition:All 0.5s ease-in-out;
+    -o-transition:All 0.5s ease-in-out;
+}
+body{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+    background:#1a1a1a;
+}
+h1,h2,h3,h4,h5,h6{font-family: 'Dosis', sans-serif;}
+.s3-clear{clear:both;}
+.s3-hidden{display:none;}
