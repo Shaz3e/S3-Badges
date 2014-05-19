@@ -1,4 +1,6 @@
-.block {
+/* S3 Block
+*********************************************/
+.s3-block {
     border: 1px solid #F0F0F0;
     height: 250px;
     margin: 1em;
