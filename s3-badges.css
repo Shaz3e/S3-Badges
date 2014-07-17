@@ -94,7 +94,7 @@
 .s3-badge-left .s3-badge-light-green,
 .s3-badge-left .s3-badge-white,
 .s3-badge-left .s3-badge-gray,
-.s3-badge-left .s3-badge-black{top:12%;left:-50%;}
+.s3-badge-left .s3-badge-black{top:18%;left:-36%;}
 .s3-badge-left-small .s3-badge-red,
 .s3-badge-left-small .s3-badge-green,
 .s3-badge-left-small .s3-badge-blue,
@@ -104,7 +104,7 @@
 .s3-badge-left-small .s3-badge-light-green,
 .s3-badge-left-small .s3-badge-white,
 .s3-badge-left-small .s3-badge-gray,
-.s3-badge-left-small .s3-badge-black{top:16%;left:-40%;}
+.s3-badge-left-small .s3-badge-black{top:15%;left:-32%;}
 .s3-badge-left-big .s3-badge-red,
 .s3-badge-left-big .s3-badge-green,
 .s3-badge-left-big .s3-badge-blue,
@@ -114,7 +114,7 @@
 .s3-badge-left-big .s3-badge-light-green,
 .s3-badge-left-big .s3-badge-white,
 .s3-badge-left-big .s3-badge-gray,
-.s3-badge-left-big .s3-badge-black{top:22%;left:-22%;}
+.s3-badge-left-big .s3-badge-black{top:20%;left:-21%;}
 
 .s3-badge-right .s3-badge-red,
 .s3-badge-right .s3-badge-green,
@@ -125,7 +125,7 @@
 .s3-badge-right .s3-badge-light-green,
 .s3-badge-right .s3-badge-white,
 .s3-badge-right .s3-badge-gray,
-.s3-badge-right .s3-badge-black{top:12%;right:15%;}
+.s3-badge-right .s3-badge-black{top:17%;right:15%;}
 .s3-badge-right-small .s3-badge-red,
 .s3-badge-right-small .s3-badge-green,
 .s3-badge-right-small .s3-badge-blue,
@@ -135,7 +135,7 @@
 .s3-badge-right-small .s3-badge-light-green,
 .s3-badge-right-small .s3-badge-white,
 .s3-badge-right-small .s3-badge-gray,
-.s3-badge-right-small .s3-badge-black{top:14%;right:10%;}
+.s3-badge-right-small .s3-badge-black{top:15%;right:2%;}
 .s3-badge-right-big .s3-badge-red,
 .s3-badge-right-big .s3-badge-green,
 .s3-badge-right-big .s3-badge-blue,
@@ -145,7 +145,7 @@
 .s3-badge-right-big .s3-badge-light-green,
 .s3-badge-right-big .s3-badge-white,
 .s3-badge-right-big .s3-badge-gray,
-.s3-badge-right-big .s3-badge-black{top:22%;right:-14%;}
+.s3-badge-right-big .s3-badge-black{top:20%;right:-21%;}
 /* S3 Badge Style for rotation (Colors)
 ***********************************************************/
 .s3-badge-left .s3-badge-red,.s3-badge-left-small .s3-badge-red,.s3-badge-left-big .s3-badge-red,
